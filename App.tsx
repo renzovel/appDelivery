@@ -6,40 +6,14 @@
  */
 
 import React from 'react';
-import type {PropsWithChildren} from 'react';
-import {
-  SafeAreaView,
-  ScrollView,
-  StatusBar,
-  StyleSheet,
-  Text,
-  useColorScheme,
-  View,
-} from 'react-native';
-
-import {Button} from "react-native-paper";
-
-
-type SectionProps = PropsWithChildren<{
-  title: string;
-}>;
-
+import BottomNav from './app/ui/views/BottomNav';
 
 function App(): JSX.Element {
   return (
-    <SafeAreaView >
-      <StatusBar />
-      <ScrollView
-        contentInsetAdjustmentBehavior="automatic" >
-        <View>
-          <Button mode={'contained'} onPress={()=>{}}>Click aqui.</Button>
-        </View>
-      </ScrollView>
-    </SafeAreaView>
+    <>
+    <BottomNav />
+    </>    
   );
 }
-
-const styles = StyleSheet.create({
-});
 
 export default App;
