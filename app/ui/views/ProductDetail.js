@@ -64,6 +64,8 @@ export default function ProductDetail(props){
                             <Checkbox
                             status={isSelect(option)?'checked':'unchecked'}
                             onPress={() => toggleOption(option)}
+                            color='#ff4081'
+                            uncheckedColor='#ff4081'
                             />
                         )}            
                     />

@@ -15,9 +15,10 @@ const theme = {
     dark:true,
     colors:{
         ...DefaultTheme.colors,
-        primary: '#eee' 
+        primary: '#eee' //#ff4081
     }
 }
+
 
 export default function Main(){
     return(
